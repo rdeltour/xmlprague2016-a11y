@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!-- 
+Image credits:
+- "comic books" cover image
+  By Sam Howzit – CC BY 2.0
+  https://www.flickr.com/photos/aloha75/with/8015843393/
+- "Bookshelf"
+  by DayDreamSyndrom – CC BY 3.0
+  http://daydreamsyndrom.deviantart.com/art/Resource-Bookshelf-316661429
+- "The Amazing Spider-Man"
+  By Waito-chan – CC BY-NC-ND 3.0
+  http://waito-chan.deviantart.com/art/The-Amazing-Spider-Man-553552072
+- "Ani Thor stroke"
+  By dragonfetus – CC BY-NC 3.0
+  http://dragonfetus.deviantart.com/art/Ani-Thor-stroke-547591754
+- "Rule 63-The Flash"
+  by MajinNeda – CC BY-NC-ND 3.0
+  http://www.deviantart.com/art/Rule-63-The-Flash-409739548
+- "DareDevil"
+  by Lyos-Scaim – CC BY-NC-ND 3.0
+  http://lyos-scaim.deviantart.com/art/Daredevil-527000589
+- "Dr. Manhattan is thinking"
+  by Sgt-Spankey – CC BY-ND 3.0
+  http://sgt-spankey.deviantart.com/art/Dr-Manhattan-is-thinking-105528095
+- "Amanda Waller"
+  promotional art from the Checkmate series launched in 2006. Art by Jesus Saiz.
+  https://en.wikipedia.org/wiki/File:Amandawaller.PNG
+- "Golden Age Batman - The Caped Crusader"
+  by AgentSAMa – CC BY-SA 3.0
+  http://agentsama.deviantart.com/art/Golden-Age-Batman-The-Caped-Crusader-316070403
+ -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Accessible EPUB 3</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section data-bespoke-backdrop="cover" class="heading" style="">
+        <div class="heading__content">
+          <h1>
+            <span><b>EPUB</b> tips</span>
+            <span class="title__trans">to become an</span>
+            <span><b>Accessibility</b> SuperHero</span>
+          </h1>
+          <p>Romain Deltour<br/>
+             XML Prague 2016</p>
+        </div>
+      </section>
+      
+      <section data-bespoke-backdrop="bookfamine" class="bullet--replace bookfamine--content">
+        <h2>The book famine</h2>
+        <img class="bullet" src="images/bookshelf.png" style="max-width: 60%" />
+        <img class="bullet" src="images/bookshelf-empty.png" style="max-width: 60%"/>
+      </section>
+
+      <section data-bespoke-backdrop="impact" class="impact--content">
+        <h2>Who's impacted?</h2>
+        <svg style="width: 60%; margin-top: 2em;" viewbox="0 0 198 116" class="population"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>
+            Untitled 3
+          </title>
+          <defs>
+            <path id="m" d="M4 1.5C4 2.328 3.328 3 2.5 3S1 2.328 1 1.5 1.672 0 2.5 0 4 .672 4 1.5zM4 4H1c-.552 0-1 .448-1 1v5h1v6h1.25v-6h.5v6H4v-6h1V5c0-.552-.448-1-1-1z" fill-rule="evenodd"/>
+            <path id="w" d="M6 1.5C6 2.328 5.328 3 4.5 3S3 2.328 3 1.5 3.672 0 4.5 0 6 .672 6 1.5zM8.234 8L9 7.445l-2.083-3.22C6.825 4.085 6.667 4 6.5 4h-4c-.168 0-.325.082-.417.223L0 7.443.766 8l1.73-2.244.6 1.402L1 10.998h1.92l.333 5h1v-5h.5v5h1l.334-5H8L5.907 7.16l.6-1.403L8.237 8h-.002z" fill-rule="evenodd"/>
+          </defs>
+          <g class="bullet">
+            <use transform="translate(0   0)" xlink:href = "#m"/>
+            <use transform="translate(8   0)" xlink:href = "#w"/>
+            <use transform="translate(20  0)" xlink:href = "#m"/>
+            <use transform="translate(28  0)" xlink:href = "#w"/>
+            <use transform="translate(40  0)" xlink:href = "#m"/>
+            <use transform="translate(48  0)" xlink:href = "#w"/>
+            <use transform="translate(60  0)" xlink:href = "#m"/>
+          </g>
+          <g class="bullet">
+            <use transform="translate(68  0)" xlink:href = "#w"/>
+            <use transform="translate(80  0)" xlink:href = "#m"/>
+            <use transform="translate(88  0)" xlink:href = "#w"/>
+            <use transform="translate(100 0)" xlink:href = "#m"/>
+            <use transform="translate(108 0)" xlink:href = "#w"/>
+            <use transform="translate(120 0)" xlink:href = "#m"/>
+            <use transform="translate(128 0)" xlink:href = "#w"/>
+            <use transform="translate(140 0)" xlink:href = "#m"/>
+            <use transform="translate(148 0)" xlink:href = "#w"/>
+            <use transform="translate(160 0)" xlink:href = "#m"/>
+            <use transform="translate(168 0)" xlink:href = "#w"/>
+            <use transform="translate(180 0)" xlink:href = "#m"/>
+            <use transform="translate(188 0)" xlink:href = "#w"/>  
+            <use transform="translate(0   25)" xlink:href = "#m"/>
+            <use transform="translate(8   25)" xlink:href = "#w"/>
+            <use transform="translate(20  25)" xlink:href = "#m"/>
+            <use transform="translate(28  25)" xlink:href = "#w"/>
+            <use transform="translate(40  25)" xlink:href = "#m"/>
+            <use transform="translate(48  25)" xlink:href = "#w"/>
+            <use transform="translate(60  25)" xlink:href = "#m"/>
+            <use transform="translate(68  25)" xlink:href = "#w"/>
+            <use transform="translate(80  25)" xlink:href = "#m"/>
+            <use transform="translate(88  25)" xlink:href = "#w"/>
+            <use transform="translate(100 25)" xlink:href = "#m"/>
+            <use transform="translate(108 25)" xlink:href = "#w"/>
+            <use transform="translate(120 25)" xlink:href = "#m"/>
+            <use transform="translate(128 25)" xlink:href = "#w"/>
+            <use transform="translate(140 25)" xlink:href = "#m"/>
+            <use transform="translate(148 25)" xlink:href = "#w"/>
+            <use transform="translate(160 25)" xlink:href = "#m"/>
+            <use transform="translate(168 25)" xlink:href = "#w"/>
+            <use transform="translate(180 25)" xlink:href = "#m"/>
+            <use transform="translate(188 25)" xlink:href = "#w"/>
+            <use transform="translate(0   50)" xlink:href = "#m"/>
+            <use transform="translate(8   50)" xlink:href = "#w"/>
+            <use transform="translate(20  50)" xlink:href = "#m"/>
+            <use transform="translate(28  50)" xlink:href = "#w"/>
+            <use transform="translate(40  50)" xlink:href = "#m"/>
+            <use transform="translate(48  50)" xlink:href = "#w"/>
+            <use transform="translate(60  50)" xlink:href = "#m"/>
+            <use transform="translate(68  50)" xlink:href = "#w"/>
+            <use transform="translate(80  50)" xlink:href = "#m"/>
+            <use transform="translate(88  50)" xlink:href = "#w"/>
+            <use transform="translate(100 50)" xlink:href = "#m"/>
+            <use transform="translate(108 50)" xlink:href = "#w"/>
+            <use transform="translate(120 50)" xlink:href = "#m"/>
+            <use transform="translate(128 50)" xlink:href = "#w"/>
+            <use transform="translate(140 50)" xlink:href = "#m"/>
+            <use transform="translate(148 50)" xlink:href = "#w"/>
+            <use transform="translate(160 50)" xlink:href = "#m"/>
+            <use transform="translate(168 50)" xlink:href = "#w"/>
+            <use transform="translate(180 50)" xlink:href = "#m"/>
+            <use transform="translate(188 50)" xlink:href = "#w"/>
+          </g>
+          <g class="bullet">
+            <use transform="translate(0   75)" xlink:href = "#m"/>
+            <use transform="translate(8   75)" xlink:href = "#w"/>
+            <use transform="translate(20  75)" xlink:href = "#m"/>
+            <use transform="translate(28  75)" xlink:href = "#w"/>
+            <use transform="translate(40  75)" xlink:href = "#m"/>
+            <use transform="translate(48  75)" xlink:href = "#w"/>
+            <use transform="translate(60  75)" xlink:href = "#m"/>
+            <use transform="translate(68  75)" xlink:href = "#w"/>
+            <use transform="translate(80  75)" xlink:href = "#m"/>
+            <use transform="translate(88  75)" xlink:href = "#w"/>
+            <use transform="translate(100 75)" xlink:href = "#m"/>
+            <use transform="translate(108 75)" xlink:href = "#w"/>
+            <use transform="translate(120 75)" xlink:href = "#m"/>
+            <use transform="translate(128 75)" xlink:href = "#w"/>
+            <use transform="translate(140 75)" xlink:href = "#m"/>
+            <use transform="translate(148 75)" xlink:href = "#w"/>
+            <use transform="translate(160 75)" xlink:href = "#m"/>
+            <use transform="translate(168 75)" xlink:href = "#w"/>
+            <use transform="translate(180 75)" xlink:href = "#m"/>
+            <use transform="translate(188 75)" xlink:href = "#w"/>  
+            <use transform="translate(0   100)" xlink:href = "#m"/>
+            <use transform="translate(8   100)" xlink:href = "#w"/>
+            <use transform="translate(20  100)" xlink:href = "#m"/>
+            <use transform="translate(28  100)" xlink:href = "#w"/>
+            <use transform="translate(40  100)" xlink:href = "#m"/>
+            <use transform="translate(48  100)" xlink:href = "#w"/>
+            <use transform="translate(60  100)" xlink:href = "#m"/>
+            <use transform="translate(68  100)" xlink:href = "#w"/>
+            <use transform="translate(80  100)" xlink:href = "#m"/>
+            <use transform="translate(88  100)" xlink:href = "#w"/>
+            <use transform="translate(100 100)" xlink:href = "#m"/>
+            <use transform="translate(108 100)" xlink:href = "#w"/>
+            <use transform="translate(120 100)" xlink:href = "#m"/>
+            <use transform="translate(128 100)" xlink:href = "#w"/>
+            <use transform="translate(140 100)" xlink:href = "#m"/>
+            <use transform="translate(148 100)" xlink:href = "#w"/>
+            <use transform="translate(160 100)" xlink:href = "#m"/>
+            <use transform="translate(168 100)" xlink:href = "#w"/>
+            <use transform="translate(180 100)" xlink:href = "#m"/>
+            <use transform="translate(188 100)" xlink:href = "#w"/>  
+          </g>
+        </svg>
+        <p class="bullet conclusion">All of us!</p>
+      </section>
+
+      <section data-bespoke-backdrop="spiderman" class="spiderman--content">
+        <h2 style="margin-top: -350px;"><span class="superhero__heading__number"># 1</span> Structure and semantics </h2>
+        <figure class="superhero superhero--left">        
+          <img src="images/spiderman.png">
+          <figcaption><p class="speech-bubble speech-bubble--right">With great<br/><b>STRUCTURE</b><br/>comes great <b>ACCESSIBILITY</b></p></figcaption>
+        </figure>
+      </section>
+
+      <section class="slide--code bullet--replace">
+        <h3>HTML5 native semantics</h3>
+        <pre class="bullet"><code>&lt;<b>section</b>>
+  &lt;<b>h1</b>>SuperHeroes&lt;/<b>h1</b>>
+  &lt;<b>section</b>>
+    &lt;<b>h1</b>>Spiderman&lt;/<b>h1</b>>
+    &lt;p>A web expert!&lt;/p>
+  &lt;/<b>section</b>>
+  (...)
+&lt;/<b>section</b>>
+</code></pre>
+        <pre class="bullet"><code>&lt;<b>section</b>>
+  &lt;<b>h1</b>>SuperHeroes&lt;/<b>h1</b>>
+  &lt;<b>section</b>>
+    <span class="highlight">&lt;<b>h1</b>>Spiderman&lt;/<b>h1</b>></span><span style="line-height: 0.8em">❌</span>
+    &lt;p>A web expert!&lt;/p>
+  &lt;/<b>section</b>>
+  (...)
+&lt;/<b>section</b>>
+</code></pre>
+        <pre class="bullet"><code>&lt;<b>section</b>>
+  &lt;<b>h1</b>>SuperHeroes&lt;/<b>h1</b>>
+  &lt;<b>section</b>>
+    <span class="highlight">&lt;<b>h2</b>>Spiderman&lt;/<b>h2</b>></span><span style="line-height: 0.8em; color: green">✔︎</span>
+    &lt;p>A web expert!&lt;/p>
+  &lt;/<b>section</b>>
+  (...)
+&lt;/<b>section</b>>
+</code></pre>
+      </section>
+
+      <section class="slide--code bullet--replace">
+        <h3>Semantic inflections</h3>
+        <pre class="bullet"><code>&lt;p>Attendees of XML Prague have the opportunity
+  to discuss cool topics while enjoying
+  frosty or hot beverages
+  <span class="highlight">&lt;a href="#note-bev" <b>epub:type="noteref"</b>>1&lt;/a></span>.
+&lt;/p>
+<div style="visibility: hidden">
+  ...
+
+&lt;<b>aside</b> id="note-bev" <b>epub:type="footnote"</b>>
+  &lt;p>I usually favor beer over coffee, but YMMV.&lt;/p>
+&lt;/<b>aside</b>></div></code></pre>
+        <pre class="bullet"><code>&lt;p>Attendees of XML Prague have the opportunity
+  to discuss cool topics while enjoying
+  frosty or hot beverages
+  &lt;a href="#note-bev" <b>epub:type="noteref"</b>>1&lt;/a>.
+&lt;/p>
+
+  ...
+
+<span class="highlight">&lt;<b>aside</b> id="note-bev" <b>epub:type="footnote"</b>>
+  &lt;p>I usually favor beer over coffee, but YMMV.&lt;/p>
+&lt;/<b>aside</b>></code></pre></span>
+      </section>
+
+      <section data-bespoke-backdrop="thor" class="thor--content">
+        <h3 style="margin-top: -350px;">Beware of overuse</h3>
+        <figure class="superhero superhero--right">        
+          <img src="images/thor-girl.png">
+          <figcaption><p class="speech-bubble speech-bubble--left">You have a hammer<br/>but<br/> everything is not<br/>a nail!</p></figcaption>
+        </figure>
+      </section>
+
+      <section data-bespoke-backdrop="flash" class="flash--content">
+      <h2 class="superhero__heading"><span class="superhero__heading__number"># 2</span>Navigation</h2>
+        <figure class="superhero superhero--right">
+          <img src="images/flash.png" >
+          <figcaption><p class="speech-bubble speech-bubble--left">I can get there...<br/>and I can get there <b>fast</b>!</p></figcaption>
+        </figure>
+      </section>
+
+      <section class="slide--code">
+        <h3>Table of Contents</h3>
+        <pre class="bullet--highlight"><code>&lt;<span class="bullet"><b>nav</b> epub:type="toc"</span>>
+  &lt;ol>
+    &lt;li>
+      &lt;a href="chap1.xhtml">Super Heroes&lt;/a>
+      &lt;ol>
+        &lt;li>
+          &lt;a href="chap1.xhtml#sec-1.1">The Marvel Universe&lt;/a>
+          &lt;ol <span class="bullet">hidden=""</span>>
+            &lt;li>
+              &lt;a href="chap1.xhtml#sec-1.1.1">Spiderman&lt;/a>
+            &lt;/li>
+          &lt;/ol>
+         &lt;/li>
+       &lt;/ol>
+     &lt;/li>
+  &lt;/ol>
+&lt;/<b>nav</b>>
+</code></pre>
+      </section>
+
+      <section class="slide--code">
+        <h3>Page List</h3>
+        <pre class="bullet"><code>&lt;span <span class="highlight">epub:type="pagebreak"</span> id="p24" title="24"/>
+</code></pre>
+        <pre class="bullet"><code>&lt;<b>nav</b> <span class="highlight">epub:type="page-list"</span>>
+    &lt;h2>Pagebreaks of the print version&lt;/h2>
+    &lt;<b>ol</b>>
+        &lt;<b>li</b>>&lt;a href="ch1.xhtml#p1">1&lt;/a>&lt;/<b>li</b>>
+        &lt;<b>li</b>>&lt;a href="ch1.xhtml#p2">2&lt;/a>&lt;/<b>li</b>> 
+        …
+        &lt;<b>li</b>>&lt;a href="ch42.xhtml#p72">72&lt;/a>&lt;/<b>li</b>>
+        &lt;<b>li</b>>&lt;a href="ch42.xhtml#p73">73&lt;/a>&lt;/<b>li</b>>
+        … 
+    &lt;/<b>ol</b>>
+&lt;/<b>nav</b>>
+</code></pre>
+      </section>
+
+      <section data-bespoke-backdrop="daredevil" class="daredevil--content">
+        <h2 class="superhero__heading"><span class="superhero__heading__number"># 3</span>Alternative content</h2>
+        <figure class="superhero superhero--left">
+          <img src="images/daredevil.png">
+          <figcaption><p class="speech-bubble speech-bubble--right">Some people need <br/>to <b>perceive</b> things <br/><b>differently</b></p></figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Image descriptions</h3>
+        <pre class="bullet--highlight"><code>&lt;p <b>id="spiderman"</b>>Spider-Man's traditional
+  red and blue costume is woven with spider
+  web patterns.&lt;/p>
+
+&lt;p>.... &lt;/p>
+
+&lt;<b>img</b> src="spiderman.jpg"
+        <span class="bullet"><b>alt</b>="Spiderman in his red and blue suit"</span>
+        <span class="bullet"><b>aria-describedby</b>="spiderman"</span>/>
+</code></pre>
+      </section>
+
+      <section>
+        <h3>Image descriptions</h3>
+        <pre><code>&lt;<b>figure</b>>
+  &lt;<b>img</b> src="spiderman.jpg" 
+       alt="Spiderman in his red and blue suit"/>
+  &lt;<span class="highlight"><b>figcaption</b></span>>Spider-Man's traditional
+  red and blue costume is woven with spider
+  web patterns.
+  &lt;/<b>figcaption</b>>
+&lt;/<b>figure</b>>
+</code></pre>
+      </section>
+
+      <section data-bespoke-backdrop="thor" class="thor--content">
+      <h3 class="superhero__heading">Not everything is an image!</h3>
+        <figure class="superhero superhero--right">
+          <img src="images/thor-girl.png" >
+          <figcaption><p class="speech-bubble speech-bubble--left">Use HTML tables,<br/>
+          SVG diagrams,<br/>
+          MathML formulas!
+          </p>
+          </figcaption>
+        </figure>
+      </section>
+
+
+      <section>
+        <h3>Media overlays</h3>
+        <pre class="bullet--highlight"><code><span class="bullet">&lt;<b>smil</b> xmlns="http://www.w3.org/ns/SMIL" version="3.0"></span>
+  &lt;body>
+    <span class="bullet">&lt;<b>par</b> id="par1">
+  <span class="bullet">&lt;<b>text</b> src="chapter1.xhtml#sentence1"/></span>
+  <span class="bullet">&lt;<b>audio</b> src="chapter1_audio.mp3"
+       clipBegin="0s" clipEnd="10s"/></span>
+&lt;/<b>par</b>></span>
+    &lt;<b>par</b> id="par2">
+      &lt;<b>text</b> src="chapter1.xhtml#sentence2"/>
+      &lt;<b>audio</b> src="chapter1_audio.mp3"
+             clipBegin="10s" clipEnd="20s"/>
+    &lt;/<b>par</b>>
+    ...
+  &lt;/body>
+&lt;/<b>smil</b>>
+</code></pre>
+      </section>
+
+      <section>
+        <h3>Media overlays – Demo</h3>
+        <video src="images/media-overlays.mp4" controls style="max-height: 80%"></video>
+      </section>
+
+
+      <section data-bespoke-backdrop="manhattan" class="manhattan--content">
+        <h2 class="superhero__heading"><span class="superhero__heading__number"># 4</span>Metadata</h2>
+        <figure class="superhero superhero--right">
+          <img src="images/dr-manhattan.png">
+          <figcaption style="margin-top: 20%; margin-left: 10%;"><p class="speech-bubble speech-bubble--left">Let me see through<br/>
+          the nature of it<br/><b>beforehand</b>!</p></figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Metadata records</h3>
+        <pre><code>&lt;<b>package</b> … >
+  &lt;<b>metadata</b>>
+      … 
+      <span class="highlight">&lt;<b>link</b> rel="<b>onix-record</b>"
+      href="EPUB/meta/onix-9781234567890.xml"/></span>
+      …
+  &lt;/<b>metadata</b>> 
+    …
+&lt;/<b>package</b>>
+</code></pre>
+      </section>
+
+
+      <section data-bespoke-backdrop="waller" class="waller--content">
+        <h2 class="superhero__heading"><span class="superhero__heading__number"># 5</span>Planification</h2>
+        <figure class="superhero superhero--left">
+          <img src="images/amanda-waller.png" style="margin-left: 100px;">
+          <figcaption style="margin-top: 30px;"><p class="speech-bubble speech-bubble--right">It's a <b>process</b>.<br/>
+          You need<br/>
+          to <b>plan</b> for it<br/>
+          </p></figcaption>
+        </figure>
+      </section>
+
+      <section data-bespoke-backdrop="batman" class="batman--content">
+        <h2 class="superhero__heading"><span class="superhero__heading__number"># 6</span>Tooling</h2>
+        <figure class="superhero superhero--left">
+          <img src="images/batman.png">
+          <figcaption style="margin-top: 30px;"><p class="speech-bubble speech-bubble--right">You don't need superpowers... <br/>Use the right<br/> <b>tools!</b>
+          </p></figcaption>
+        </figure>
+      </section>
+
+      <section  data-bespoke-backdrop="tools" class="tools--content">
+        <h3>Some useful tools</h3>
+        <ul>
+          <li>XSLT + XProc FTW!</li>
+          <li>DAISY <a href="http://www.daisy.org/project/tobi">Tobi</a> and <a href="http://www.daisy.org/project/obi">Obi</a></li>
+          <li><a href="https://www.mathmlcloud.org/">MathML cloud</a></li>
+          <li><a href="https://github.com/readbeyond/aeneas">aeneas</a></li>
+        </ul>
+      </section>
+
+      <section data-bespoke-backdrop="baseline" class="baseline--content">
+        <h2>Baseline for “Born Accessible” EPUB 3</h2>
+        <blockquote style="margin: 2em 4em;">We want to provide minimum requirements, clear guidance for Publishers, and assurance to consumers on what they can expect.</blockquote>
+        <p style="margin: 2em 4em;">Kick-off events near Baltimore, Feb 24-25</p>
+      </section>
+
+      <section data-bespoke-backdrop="thanks" class="thanks--content">
+        <h2 style="font-size: 3em;">Thank you!</h2>
+        <p>@rdeltour</p>
+      </section>
+
+    </article>
+
+    <script src="build/build.js"></script>
+  </body>
+</html>
